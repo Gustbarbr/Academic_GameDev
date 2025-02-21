@@ -1,10 +1,10 @@
 # GameDev
 Repositório para salvar games desenvolvidos.
 
-**Air Hockey**
+**AIR HOCKEY**
 
 Desenvolvido por **Gustavo Gomes Barbosa** e **Pedro Munhoz Rosin**
 
-**Arkanoid**
+**ARKANOID**
 
 Desenvolvido por **Gustavo Gomes Barbosa** e **Pedro Munhoz Rosin**
