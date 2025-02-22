@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -8,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public KeyCode moveLeft = KeyCode.A;      //UP
     public KeyCode moveRight = KeyCode.D; 
     public float speed = 10.0f;            
-    private float boundX = 8.9f;           
+    private float boundX = 9.3f;           
     private Rigidbody2D rb2d;
     public int playerHP = 3;
 
@@ -53,18 +54,20 @@ public class PlayerController : MonoBehaviour
         // Basicamente pega uma lista com objetos que possuam o script "GreyBlock" anexado a eles, usando o novo método recomendado para Unity 2023.1+
         GreyBlock[] greyBlocks = Object.FindObjectsByType<GreyBlock>(FindObjectsSortMode.None);
 
-        // Para cada objeto que possua o script ele chamará uma função, que no caso reseta o HP para 1
+        // Para cada objeto que possua o script ele chamará uma função, que no caso "revive" o bloco
         foreach (GreyBlock block in greyBlocks)
         {
-            block.RegenerateGreyBlocks();
+            block.gameObject.SetActive(true);
+            if (block.gameObject.activeInHierarchy)
+            {
+                Debug.Log($"{block.gameObject.name} reativado!");
+            }
         }
     }
-
-
 
     public void ResetPlayer()
     {
         rb2d.velocity = Vector2.zero;
-        transform.position = new Vector2(-0.01128456f, -3.847024f);
+        transform.position = new Vector2(0f, -4f);
     }
 }

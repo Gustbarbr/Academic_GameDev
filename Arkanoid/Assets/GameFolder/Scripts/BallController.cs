@@ -51,7 +51,7 @@ public class BallController : MonoBehaviour
     }
     void ResetBall(){
         rb2d.velocity = Vector2.zero;
-        transform.position = new Vector2(-0.008764863f, -1.428806f);
+        transform.position = new Vector2(0f, 0f);
     }
     void RestartGame(){
         // Acessa um outro script
