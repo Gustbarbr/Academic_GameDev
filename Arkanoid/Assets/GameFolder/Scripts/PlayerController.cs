@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb2d;
     public int playerHP = 3;
 
+    public GameObject gameManager;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>(); 
@@ -44,25 +46,16 @@ public class PlayerController : MonoBehaviour
         if(playerHP <= 0)
         {
             ResetPlayer();
-            ResetGreyBlock();
+            ResetBlocks();
             playerHP = 3;
         }
     }
 
-    void ResetGreyBlock()
+    void ResetBlocks()
     {
-        // Basicamente pega uma lista com objetos que possuam o script "GreyBlock" anexado a eles, usando o novo método recomendado para Unity 2023.1+
-        GreyBlock[] greyBlocks = Object.FindObjectsByType<GreyBlock>(FindObjectsSortMode.None);
-
-        // Para cada objeto que possua o script ele chamará uma função, que no caso "revive" o bloco
-        foreach (GreyBlock block in greyBlocks)
-        {
-            block.gameObject.SetActive(true);
-            if (block.gameObject.activeInHierarchy)
-            {
-                Debug.Log($"{block.gameObject.name} reativado!");
-            }
-        }
+        GameManager gm = gameManager.GetComponent<GameManager>();
+        gm.ResetGreyBlock();
+        gm.ResetBlueBlock();
     }
 
     public void ResetPlayer()
