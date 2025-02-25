@@ -5,13 +5,13 @@ using UnityEngine;
 public class PurpleBlock : MonoBehaviour
 {
 
-    public float hp = 2;
+    public float hp = 4;
 
     private void Update()
     {
         if(hp <= 0)
         {
-            // Desativa o objeto no qual esse script est� anexado para que ele desaparessa, mas ainda pode ser regenerado
+            // Destrói o objeto quando ocorrer a colisão
             Destroy(gameObject);
         }
         

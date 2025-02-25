@@ -42,21 +42,35 @@ public class PlayerController : MonoBehaviour
         else if (pos.x < -boundX) {
             pos.x = -boundX;                    
         }
-        transform.position = pos;  
+        transform.position = pos; 
         
         if(playerHP <= 0)
         {
-            ResetPlayer();
-            ResetBlocks();
-            playerHP = 3;
+            RestartGame();
         }
+    }
+
+    void RestartGame(){
+
+        string cenaAtual = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene("CenaMorte");
+
+        StartCoroutine(Reiniciar(2f, cenaAtual));
+    }
+
+    IEnumerator Reiniciar(float delay, string sceneName){
+        yield return new WaitForSeconds(delay);
+
+
+        ResetPlayer();
+        ResetBlocks();
+        SceneManager.LoadScene(sceneName);
     }
 
     void ResetBlocks()
     {
         GameManager gm = gameManager.GetComponent<GameManager>();
-        gm.ResetGreyBlock();
-        gm.ResetBlueBlock();
+        gm.ResetBlocks();
     }
 
     public void ResetPlayer()

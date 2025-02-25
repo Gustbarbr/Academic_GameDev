@@ -6,6 +6,9 @@ public class GreyBlock : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);  
+        // Destrói o objeto quando ocorrer a colisão
+        Destroy(gameObject);
     }
+
+
 }

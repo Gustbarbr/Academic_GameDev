@@ -11,7 +11,7 @@ public class BlueBlock : MonoBehaviour
     {
         if(hp <= 0)
         {
-            // Desativa o objeto no qual esse script est� anexado para que ele desaparessa, mas ainda pode ser regenerado
+            // Destrói o objeto quando ocorrer a colisão
             Destroy(gameObject);
         }
         
