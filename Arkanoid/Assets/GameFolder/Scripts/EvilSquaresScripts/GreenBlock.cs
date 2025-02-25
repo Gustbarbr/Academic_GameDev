@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlueBlock : MonoBehaviour
+public class GreenBlock : MonoBehaviour
 {
 
     public float hp = 2;

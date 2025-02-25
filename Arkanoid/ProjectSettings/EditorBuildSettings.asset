@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cena1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
-    path: Assets/Scenes/Cena1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Cena2.unity
     guid: 57f4b943cfcaea642b7cda7525d36b3a
@@ -20,5 +17,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cena4.unity
     guid: 18e6678187d19da4699afa6e6fd36c3e
+  - enabled: 1
+    path: Assets/Scenes/CenaGanhar.unity
+    guid: 9e5aee927d7fecc40bcd0de88e52fcd9
+  - enabled: 1
+    path: Assets/Scenes/CenaMorte.unity
+    guid: aa5fa3bf45a8df549b7c897bca431a87
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
