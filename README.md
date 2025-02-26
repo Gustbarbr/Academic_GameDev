@@ -1,5 +1,5 @@
 # GameDev
-Repository to store developed games.
+Portfolio for game development.
 
 **AIR HOCKEY**
 
