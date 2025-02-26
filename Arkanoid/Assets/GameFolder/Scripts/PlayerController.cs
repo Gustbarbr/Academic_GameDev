@@ -52,19 +52,15 @@ public class PlayerController : MonoBehaviour
 
     void RestartGame(){
 
-        string cenaAtual = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene("CenaMorte");
 
-        StartCoroutine(Reiniciar(2f, cenaAtual));
-    }
+        if(Input.GetKey(KeyCode.Space)){
+            SceneManager.LoadScene("Cena1");
+            ResetPlayer();
+            ResetBlocks();
+        }
 
-    IEnumerator Reiniciar(float delay, string sceneName){
-        yield return new WaitForSeconds(delay);
 
-
-        ResetPlayer();
-        ResetBlocks();
-        SceneManager.LoadScene(sceneName);
     }
 
     void ResetBlocks()

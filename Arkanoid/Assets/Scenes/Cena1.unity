@@ -3571,7 +3571,7 @@ MonoBehaviour:
   moveLeft: 97
   moveRight: 100
   speed: 10
-  playerHP: 3
+  playerHP: 1
   gameManager: {fileID: 1571840972}
 --- !u!50 &863535673
 Rigidbody2D:
