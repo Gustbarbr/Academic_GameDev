@@ -42,7 +42,7 @@ public class BallController : MonoBehaviour
 
                 // Acessa um outro script
                 PlayerController playerController = player.GetComponent<PlayerController>();
-                // Acessa uma variável pública do outro script
+                // Acessa uma variï¿½vel pï¿½blica do outro script
                 int playerLife = playerController.playerHP;
                 // Causa dano
                 playerController.playerHP--;

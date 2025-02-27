@@ -1,48 +1,85 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class GameManager : MonoBehaviour
 {
     public static int PlayerScore = 0;
     public static int PlayerLife = 3;
     public GUISkin layout;
-    GameObject theBall;
-    GameObject player;
+    bool blueFlag;
 
-    void Start()
+    public void Fase2()
     {
-        theBall = GameObject.FindGameObjectWithTag("Ball");
-        player = GameObject.FindGameObjectWithTag("Player");
+        // Pega o nome da cena atual
+        Scene cenaAtual = SceneManager.GetActiveScene();
+        string nomeCena = cenaAtual.name;
+
+        // Se est√° na √∫ltima fase e todos os blocos foram destru√≠dos, ent√£o a tela de vit√≥ria √© mostrada
+        if (nomeCena == "Cena1" && GreyBlocksDestroyed() == true && BlueBlocksDestroyed() == true)
+        {
+            SceneManager.LoadScene("Cena2");
+        }
     }
 
-    public void ResetGreyBlock()
+    public void Vitoria()
     {
-        // Basicamente pega uma lista com objetos que possuam o script "GreyBlock" anexado a eles, usando o novo mÈtodo recomendado para Unity 2023
+        // Pega o nome da cena atual
+        Scene cenaAtual = SceneManager.GetActiveScene();
+        string nomeCena = cenaAtual.name;
+
+        // Se est√° na √∫ltima fase e todos os blocos foram destru√≠dos, ent√£o a tela de vit√≥ria √© mostrada
+        if (nomeCena == "Cena2" && GreyBlocksDestroyed() == true && BlueBlocksDestroyed() == true && GreyBlocksDestroyed() == true && GreenBlocksDestroyed() == true && YellowBlocksDestroyed() == true && RedBlocksDestroyed() == true && PurpleBlocksDestroyed() == true)
+        {
+            SceneManager.LoadScene("CenaGanhar");
+        }
+    }
+
+    public bool GreyBlocksDestroyed()
+    {
+        // Basicamente pega uma lista com todos objetos que possuam o script BlueBlock
         GreyBlock[] greyBlocks = Object.FindObjectsByType<GreyBlock>(FindObjectsSortMode.None);
 
-        // Para cada objeto que possua o script ele chamar· uma funÁ„o, que no caso "revive" o bloco
-        foreach (GreyBlock block in greyBlocks)
-        {
-            block.GetComponent<SpriteRenderer>().enabled = true;
-            block.GetComponent<BoxCollider2D>().enabled = true;
-            block.GetComponent<GreyBlock>().enabled = true;
-        }
+        // Se a quantidade de blocos azuis for igual a zero, ent√£o todos foram destruidos
+        return greyBlocks.Length == 0;
     }
 
-    public void ResetBlueBlock()
+    public bool BlueBlocksDestroyed()
     {
-        // Basicamente pega uma lista com objetos que possuam o script "BlueBlock" anexado a eles, usando o novo mÈtodo recomendado para Unity 2023
+        // Basicamente pega uma lista com todos objetos que possuam o script BlueBlock
         BlueBlock[] blueBlocks = Object.FindObjectsByType<BlueBlock>(FindObjectsSortMode.None);
 
-        // Para cada objeto que possua o script ele chamar· uma funÁ„o, que no caso "revive" o bloco
-        foreach (BlueBlock block in blueBlocks)
-        {
-            block.GetComponent<SpriteRenderer>().enabled = true;
-            block.GetComponent<BoxCollider2D>().enabled = true;
-            block.GetComponent<BlueBlock>().enabled = true;
-            block.hp = 2;
-        }
+        // Se a quantidade de blocos azuis for igual a zero, ent√£o todos foram destruidos
+        return blueBlocks.Length == 0;
+    }
+
+    // S√£o iguais ao blue
+    public bool GreenBlocksDestroyed()
+    {
+        GreenBlock[] greenBlocks = Object.FindObjectsByType<GreenBlock>(FindObjectsSortMode.None);
+
+        return greenBlocks.Length == 0;
+    }
+
+    public bool YellowBlocksDestroyed()
+    {
+        YellowBlock[] yellowBlocks = Object.FindObjectsByType<YellowBlock>(FindObjectsSortMode.None);
+
+        return yellowBlocks.Length == 0;
+    }
+
+    public bool RedBlocksDestroyed()
+    {
+        RedBlock[] redBlocks = Object.FindObjectsByType<RedBlock>(FindObjectsSortMode.None);
+
+        return redBlocks.Length == 0;
+    }
+
+    public bool PurpleBlocksDestroyed()
+    {
+        PurpleBlock[] purpleBlocks = Object.FindObjectsByType<PurpleBlock>(FindObjectsSortMode.None);
+
+        return purpleBlocks.Length == 0;
     }
 }

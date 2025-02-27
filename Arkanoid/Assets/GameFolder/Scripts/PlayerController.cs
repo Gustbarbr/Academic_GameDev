@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        GameManager gm = gameManager.GetComponent<GameManager>();
+        gm.Fase2();
+        gm.Vitoria();
+
         var vel = rb2d.velocity;                
         if (Input.GetKey(moveLeft)) {             
             vel.x = -speed;
@@ -41,21 +46,12 @@ public class PlayerController : MonoBehaviour
         else if (pos.x < -boundX) {
             pos.x = -boundX;                    
         }
-        transform.position = pos;  
+        transform.position = pos; 
         
         if(playerHP <= 0)
         {
-            ResetPlayer();
-            ResetBlocks();
-            playerHP = 3;
+            SceneManager.LoadScene("CenaMorte");
         }
-    }
-
-    void ResetBlocks()
-    {
-        GameManager gm = gameManager.GetComponent<GameManager>();
-        gm.ResetGreyBlock();
-        gm.ResetBlueBlock();
     }
 
     public void ResetPlayer()

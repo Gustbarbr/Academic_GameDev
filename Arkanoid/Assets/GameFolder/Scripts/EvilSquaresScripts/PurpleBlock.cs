@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlueBlock : MonoBehaviour
+public class PurpleBlock : MonoBehaviour
 {
 
-    public float hp = 2;
+    public float hp = 4;
 
     private void Update()
     {
