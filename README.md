@@ -1,10 +1,10 @@
 # GameDev
-Repositório para salvar games desenvolvidos.
+Portfolio for game development.
 
 **AIR HOCKEY**
 
-Desenvolvido por **Gustavo Gomes Barbosa** e **Pedro Munhoz Rosin**
+Developed by **Gustavo Gomes Barbosa** e **Pedro Munhoz Rosin** for University FEI.
 
 **ARKANOID**
 
-Desenvolvido por **Gustavo Gomes Barbosa** e **Pedro Munhoz Rosin**
+Developed by **Gustavo Gomes Barbosa** e **Pedro Munhoz Rosin** for University FEI.
