@@ -7,6 +7,7 @@ public class BallController : MonoBehaviour
 
     private Rigidbody2D rb2d;
     public GameObject player;
+    private float boundX = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,16 @@ public class BallController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        var pos = transform.position;
+        if (pos.x > boundX)
+        {
+            pos.x = boundX;
+        }
+        else if (pos.x < -boundX)
+        {
+            pos.x = -boundX;
+        }
+        transform.position = pos;
     }
 
     void GoBall(){                      
@@ -35,7 +45,12 @@ public class BallController : MonoBehaviour
                 vel.x = rb2d.velocity.x;
                 vel.y = (rb2d.velocity.y / 2) + (coll.collider.attachedRigidbody.velocity.y / 3);
                 rb2d.velocity = vel;
-            }
+                Vector2 collisionDirection = (transform.position - coll.transform.position).normalized;
+
+                // Aumenta a força com base na direção da colisão
+                float forceMagnitude = 0.1f; // Ajuste conforme necessário para aumentar a intensidade
+                rb2d.AddForce(collisionDirection * forceMagnitude, ForceMode2D.Impulse); // Aplica força na direção da colisão
+        }
 
             if(coll.collider.name == "bottom")
             {
