@@ -6,10 +6,18 @@ public class RedBlock : MonoBehaviour
 {
 
     public float hp = 3;
+
+    private ScoreManager scoreManager;
+
+    void Start(){
+        scoreManager = FindObjectOfType<ScoreManager>();
+    }
+
     private void Update()
     {
         if(hp <= 0)
         {
+            scoreManager.ScoreRedBlock();
             // Destrói o objeto quando ocorrer a colisão
             Destroy(gameObject);
         }

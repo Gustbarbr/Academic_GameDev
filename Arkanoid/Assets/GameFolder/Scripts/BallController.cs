@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BallController : MonoBehaviour
 {
@@ -9,10 +10,28 @@ public class BallController : MonoBehaviour
     public GameObject player;
     private float boundX = 10f;
 
+    private LifeManager lifeManager;
+
+
     // Start is called before the first frame update
     void Start()
     {
+
+        Scene cenaAtual = SceneManager.GetActiveScene();
+        string nomeCena = cenaAtual.name;
+
+        // Garantir que só haja um ball na cena
+        if (FindObjectsOfType<PlayerController>().Length > 1)
+        {
+            Destroy(gameObject);  // Se já existe uma instância do jogador, destrua este
+        }
+
+        if(nomeCena == "Cena1" || nomeCena == "Cena2"){
+            DontDestroyOnLoad(gameObject);  // Faz o objeto não ser destruído
+        }
+
         rb2d = GetComponent<Rigidbody2D>(); 
+        lifeManager = FindObjectOfType<LifeManager>();
         Invoke("GoBall", 2);          
     }
 
@@ -31,7 +50,7 @@ public class BallController : MonoBehaviour
         transform.position = pos;
     }
 
-    void GoBall(){                      
+    public void GoBall(){                      
         float rand = Random.Range(0, 2);
         if(rand < 1){
             rb2d.AddForce(new Vector2(20, -15));
@@ -54,7 +73,7 @@ public class BallController : MonoBehaviour
 
             if(coll.collider.name == "bottom")
             {
-
+                lifeManager.LoseLife();
                 // Acessa um outro script
                 PlayerController playerController = player.GetComponent<PlayerController>();
                 // Acessa uma vari�vel p�blica do outro script
@@ -64,7 +83,7 @@ public class BallController : MonoBehaviour
                 RestartGame();
             }
     }
-    void ResetBall(){
+    public void ResetBall(){
         rb2d.velocity = Vector2.zero;
         transform.position = new Vector2(0f, 0f);
     }

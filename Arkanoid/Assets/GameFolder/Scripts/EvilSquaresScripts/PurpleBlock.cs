@@ -7,10 +7,17 @@ public class PurpleBlock : MonoBehaviour
 
     public float hp = 4;
 
+    private ScoreManager scoreManager;
+
+    void Start(){
+        scoreManager = FindObjectOfType<ScoreManager>();
+    }
+
     private void Update()
     {
         if(hp <= 0)
         {
+            scoreManager.ScorePurpleBlock();
             // Destrói o objeto quando ocorrer a colisão
             Destroy(gameObject);
         }

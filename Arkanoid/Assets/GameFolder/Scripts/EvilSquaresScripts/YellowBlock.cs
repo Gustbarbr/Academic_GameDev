@@ -7,10 +7,17 @@ public class YellowBlock : MonoBehaviour
 
     public float hp = 3;
 
+    private ScoreManager scoreManager;
+
+    void Start(){
+        scoreManager = FindObjectOfType<ScoreManager>();
+    }
+
     private void Update()
     {
         if(hp <= 0)
         {
+            scoreManager.ScoreYellowBlock();
             // Destrói o objeto quando ocorrer a colisão
             Destroy(gameObject);
         }

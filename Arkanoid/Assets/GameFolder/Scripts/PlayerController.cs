@@ -18,6 +18,21 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        Scene cenaAtual = SceneManager.GetActiveScene();
+        string nomeCena = cenaAtual.name;
+
+        // Garantir que só haja um player na cena
+        if (FindObjectsOfType<PlayerController>().Length > 1)
+        {
+            Destroy(gameObject);  // Se já existe uma instância do jogador, destrua este
+        }
+        if(nomeCena == "Cena1" || nomeCena == "Cena2"){
+            DontDestroyOnLoad(gameObject);  // Faz o objeto não ser destruído
+        }
+        else{
+            Destroy(gameObject);
+        }
+
         rb2d = GetComponent<Rigidbody2D>(); 
     }
 

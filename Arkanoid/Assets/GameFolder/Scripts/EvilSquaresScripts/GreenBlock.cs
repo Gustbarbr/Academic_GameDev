@@ -7,10 +7,17 @@ public class GreenBlock : MonoBehaviour
 
     public float hp = 2;
 
+    private ScoreManager scoreManager;
+
+    void Start(){
+        scoreManager = FindObjectOfType<ScoreManager>();
+    }
+
     private void Update()
     {
         if(hp <= 0)
         {
+            scoreManager.ScoreGreenBlock();
             // Destrói o objeto quando ocorrer a colisão
             Destroy(gameObject);
         }

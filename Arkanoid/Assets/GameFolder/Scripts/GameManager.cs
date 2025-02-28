@@ -5,21 +5,29 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static int PlayerScore = 0;
-    public static int PlayerLife = 3;
+    public GameObject player;
+    public GameObject ball;
     public GUISkin layout;
     bool blueFlag;
 
+    void Start(){
+        DontDestroyOnLoad(gameObject);
+    }
+
     public void Fase2()
     {
-        // Pega o nome da cena atual
         Scene cenaAtual = SceneManager.GetActiveScene();
         string nomeCena = cenaAtual.name;
 
-        // Se está na última fase e todos os blocos foram destruídos, então a tela de vitória é mostrada
-        if (nomeCena == "Cena1" && GreyBlocksDestroyed() == true && BlueBlocksDestroyed() == true)
+        PlayerController jogador = player.GetComponent<PlayerController>();
+        BallController bola = ball.GetComponent<BallController>();
+
+        if (nomeCena == "Cena1" && GreyBlocksDestroyed() && BlueBlocksDestroyed())  // Removi o "== true"
         {
+            jogador.ResetPlayer();
+            bola.ResetBall();
             SceneManager.LoadScene("Cena2");
+            bola.GoBall();
         }
     }
 
