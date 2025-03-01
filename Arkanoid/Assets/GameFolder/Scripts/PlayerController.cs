@@ -26,11 +26,13 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(gameObject);  // Se já existe uma instância do jogador, destrua este
         }
-        if(nomeCena == "Cena1" || nomeCena == "Cena2"){
-            DontDestroyOnLoad(gameObject);  // Faz o objeto não ser destruído
-        }
-        else{
+        if(nomeCena == "CenaGanhar" || nomeCena == "CenaMorte")
+        {
             Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);  // Faz o objeto não ser destruído
         }
 
         rb2d = GetComponent<Rigidbody2D>(); 
