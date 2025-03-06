@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Invaders : MonoBehaviour
 {
-    // Start is called before the first frame update
 
     private Rigidbody2D rb2d;
     private float timer = 0.0f;
@@ -12,6 +11,7 @@ public class Invaders : MonoBehaviour
     private int state = 0;
     private float x;
     private float speed = 2.0f;
+
 
     void Start()
     {
@@ -31,9 +31,8 @@ public class Invaders : MonoBehaviour
             ChangeState();
             timer = 0.0f;
         }
-
+        
     }
-
 
     void ChangeState(){
         var vel = rb2d.velocity;
