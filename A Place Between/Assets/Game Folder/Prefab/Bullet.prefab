@@ -148,8 +148,8 @@ GameObject:
   - component: {fileID: 3289509632471583670}
   - component: {fileID: 8411214285592961987}
   - component: {fileID: 2177348166630636180}
-  - component: {fileID: 4165925628812492811}
-  - component: {fileID: 7333877268577145169}
+  - component: {fileID: 4762867308167418049}
+  - component: {fileID: 7326320472456139810}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -214,8 +214,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 34587324d412940a79d530020c957dc0, type: 3}
-  m_Color: {r: 0.968729, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_Color: {r: 1, g: 0.96840537, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -301,9 +301,9 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!70 &4165925628812492811
-CapsuleCollider2D:
+  m_Constraints: 0
+--- !u!58 &4762867308167418049
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -335,9 +335,9 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
---- !u!114 &7333877268577145169
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &7326320472456139810
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -346,10 +346,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7822281798131934036}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7d14d1ca86c11d4791fdd5ca68ced10, type: 3}
+  m_Script: {fileID: 11500000, guid: 35ea95c9a4e283642b1b935c296c37ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2177348166630636180}
-  attackSpeed: 0.3
-  attackTimer: 0
-  projectileSpeed: 300

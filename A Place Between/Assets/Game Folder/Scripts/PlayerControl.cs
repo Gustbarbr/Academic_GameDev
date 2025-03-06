@@ -17,7 +17,7 @@ public class PlayerControl : MonoBehaviour
     public float attackSpeed = 0.3f;
     float attackCooldown = 0.5f;
     public float attackTimer;
-    public float projectileSpeed = 300f;
+    float projectileSpeed = 50f;
 
     void Start()
     {
@@ -77,4 +77,5 @@ public class PlayerControl : MonoBehaviour
         // Reseta o tempo de recarga do ataque
         attackTimer = 0;
     }
+
 }
