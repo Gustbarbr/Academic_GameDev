@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,10 +14,15 @@ public class PlayerController : MonoBehaviour
     public GameObject projectilePrefab;
     public float fireRate = 0.5f; // Tempo de recarga
     public float projectileSpeed = 10f; // Velocidade do projétil
-    private float nextFireTime = 0f;
+    public float nextFireTime = 0f;
+
+    public TextMeshProUGUI scoreText;
+    int hp = 3;
 
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
+        scoreText.text = "LIFE: " + hp.ToString();
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
@@ -50,11 +56,12 @@ public class PlayerController : MonoBehaviour
         }
         transform.position = pos;
 
+        nextFireTime += Time.deltaTime;
         // Verifica se o botão de espaço foi pressionado e o tempo adequado para disparar
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time >= nextFireTime)
+        if (Input.GetKeyDown(KeyCode.Space) && nextFireTime >= 0.5f)
         {
             ShootProjectile();
-            nextFireTime = Time.time + fireRate;  // Atualiza o tempo para o próximo disparo
+            nextFireTime = 0;  // Atualiza o tempo para o próximo disparo
         }
     }
 
@@ -68,5 +75,12 @@ public class PlayerController : MonoBehaviour
         
         // Define a velocidade do projétil
         rb.velocity = transform.up * projectileSpeed;  // Vai para a direção 'up' do jogador
+
+        // Define que este projétil é do jogador
+        projectile.GetComponent<ProjectileBehaviour>().isPlayerProjectile = true; 
+    }
+
+    public void SpacerHealth(){
+        scoreText.text = "LIFE " + hp.ToString();
     }
 }

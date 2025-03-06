@@ -7,6 +7,7 @@ public class ProjectileBehaviour : MonoBehaviour
     public float Speed = 4.5f;
 
     private ScoreManager scoreManager;
+     public bool isPlayerProjectile = false;
 
     void Start(){
         scoreManager = FindObjectOfType<ScoreManager>();
@@ -19,12 +20,18 @@ public class ProjectileBehaviour : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Enemy"))
+        if (isPlayerProjectile && collider.CompareTag("Enemy"))
         {
             Destroy(collider.gameObject); // Destroi o inimigo
             Destroy(gameObject); // Destroi a bala ao colidir com o inimigo
             scoreManager.ScorePointos();
         }
+
+        else if(!isPlayerProjectile && collider.CompareTag("Player")){
+            Destroy(collider.gameObject); // Destroi o inimigo
+            Destroy(gameObject); // Destroi a bala ao colidir com o inimigo
+        }
+
         if (collider.CompareTag("TheWall"))
         {
             Destroy(gameObject);
