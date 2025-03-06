@@ -34,7 +34,6 @@ public class Invaders : MonoBehaviour
 
     }
 
-
     void ChangeState(){
         var vel = rb2d.velocity;
         vel.x *= -1;
