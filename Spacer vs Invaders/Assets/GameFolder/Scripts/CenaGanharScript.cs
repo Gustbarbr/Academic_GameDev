@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuScript : MonoBehaviour
+public class CenaGanharScript : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,7 +15,7 @@ public class MenuScript : MonoBehaviour
     void Update()
     {
         if(Input.GetKey(KeyCode.Space)){
-            SceneManager.LoadScene("Cena1");
+            SceneManager.LoadScene("Menu");
         }
     }
 }

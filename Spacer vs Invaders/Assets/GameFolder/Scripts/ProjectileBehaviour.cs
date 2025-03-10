@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ProjectileBehaviour : MonoBehaviour
 {
@@ -36,7 +37,9 @@ public class ProjectileBehaviour : MonoBehaviour
             player.SpacerHealth();
             if(player.hp <= 0)
             {
+                //TESTE PARA TROCAR DE CENA AO MORRER
                 Destroy(collider.gameObject); // Destroi o inimigo
+                SceneManager.LoadScene("CenaMorte");
             }
         }
 
