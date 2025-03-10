@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     public float nextFireTime = 0f;
 
     public TextMeshProUGUI scoreText;
-    int hp = 3;
+    public float hp = 3;
 
     void Start()
     {
@@ -81,6 +81,6 @@ public class PlayerController : MonoBehaviour
     }
 
     public void SpacerHealth(){
-        scoreText.text = "LIFE " + hp.ToString();
+        scoreText.text = "LIFE: " + hp.ToString();
     }
 }

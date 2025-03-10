@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 48162968}
   - component: {fileID: 48162967}
   - component: {fileID: 48162966}
+  - component: {fileID: 48162971}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (13)
   m_TagString: Enemy
@@ -316,6 +317,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &48162971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48162964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &72298003
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,6 +345,7 @@ GameObject:
   - component: {fileID: 72298007}
   - component: {fileID: 72298006}
   - component: {fileID: 72298005}
+  - component: {fileID: 72298010}
   m_Layer: 0
   m_Name: Android_Invader (14)
   m_TagString: Enemy
@@ -513,6 +529,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &72298010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72298003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &143896934
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,6 +557,7 @@ GameObject:
   - component: {fileID: 143896938}
   - component: {fileID: 143896937}
   - component: {fileID: 143896936}
+  - component: {fileID: 143896941}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (6)
   m_TagString: Enemy
@@ -710,6 +741,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &143896941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143896934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &168421498
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,6 +769,7 @@ GameObject:
   - component: {fileID: 168421502}
   - component: {fileID: 168421501}
   - component: {fileID: 168421500}
+  - component: {fileID: 168421505}
   m_Layer: 0
   m_Name: Juca (12)
   m_TagString: Enemy
@@ -907,6 +953,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &168421505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168421498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &188481497
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +981,7 @@ GameObject:
   - component: {fileID: 188481501}
   - component: {fileID: 188481500}
   - component: {fileID: 188481499}
+  - component: {fileID: 188481504}
   m_Layer: 0
   m_Name: Juca (5)
   m_TagString: Enemy
@@ -1104,6 +1165,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &188481504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188481497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &247460308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,6 +1329,7 @@ GameObject:
   - component: {fileID: 248630618}
   - component: {fileID: 248630617}
   - component: {fileID: 248630616}
+  - component: {fileID: 248630621}
   m_Layer: 0
   m_Name: Juca (1)
   m_TagString: Enemy
@@ -1437,6 +1513,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &248630621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248630614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &254389245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,6 +1541,7 @@ GameObject:
   - component: {fileID: 254389249}
   - component: {fileID: 254389248}
   - component: {fileID: 254389247}
+  - component: {fileID: 254389252}
   m_Layer: 0
   m_Name: Juca (8)
   m_TagString: Enemy
@@ -1634,6 +1725,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &254389252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254389245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &257376005
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,6 +1753,7 @@ GameObject:
   - component: {fileID: 257376011}
   - component: {fileID: 257376010}
   - component: {fileID: 257376009}
+  - component: {fileID: 257376012}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader
   m_TagString: Enemy
@@ -1831,6 +1937,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &257376012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257376005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &261258276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,6 +1965,7 @@ GameObject:
   - component: {fileID: 261258280}
   - component: {fileID: 261258279}
   - component: {fileID: 261258278}
+  - component: {fileID: 261258283}
   m_Layer: 0
   m_Name: Juca (9)
   m_TagString: Enemy
@@ -2028,6 +2149,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &261258283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261258276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &335778971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,6 +2177,7 @@ GameObject:
   - component: {fileID: 335778975}
   - component: {fileID: 335778974}
   - component: {fileID: 335778973}
+  - component: {fileID: 335778978}
   m_Layer: 0
   m_Name: Android_Invader (7)
   m_TagString: Enemy
@@ -2225,6 +2361,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &335778978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335778971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &337959237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2274,6 +2424,7 @@ GameObject:
   - component: {fileID: 340240638}
   - component: {fileID: 340240637}
   - component: {fileID: 340240636}
+  - component: {fileID: 340240641}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (3)
   m_TagString: Enemy
@@ -2457,6 +2608,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &340240641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340240634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &395801584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,6 +2636,7 @@ GameObject:
   - component: {fileID: 395801588}
   - component: {fileID: 395801587}
   - component: {fileID: 395801586}
+  - component: {fileID: 395801591}
   m_Layer: 0
   m_Name: Android_Invader (13)
   m_TagString: Enemy
@@ -2654,6 +2820,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &395801591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395801584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &401821682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2668,6 +2848,7 @@ GameObject:
   - component: {fileID: 401821686}
   - component: {fileID: 401821685}
   - component: {fileID: 401821684}
+  - component: {fileID: 401821689}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (7)
   m_TagString: Enemy
@@ -2851,6 +3032,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &401821689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401821682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &474792598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,6 +3060,7 @@ GameObject:
   - component: {fileID: 474792602}
   - component: {fileID: 474792601}
   - component: {fileID: 474792600}
+  - component: {fileID: 474792605}
   m_Layer: 0
   m_Name: Android_Invader (6)
   m_TagString: Enemy
@@ -3048,6 +3244,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &474792605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474792598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &489359057
 GameObject:
   m_ObjectHideFlags: 0
@@ -3062,6 +3272,7 @@ GameObject:
   - component: {fileID: 489359061}
   - component: {fileID: 489359060}
   - component: {fileID: 489359059}
+  - component: {fileID: 489359064}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (14)
   m_TagString: Enemy
@@ -3245,6 +3456,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &489359064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489359057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &500667210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3259,6 +3484,7 @@ GameObject:
   - component: {fileID: 500667214}
   - component: {fileID: 500667213}
   - component: {fileID: 500667212}
+  - component: {fileID: 500667217}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (7)
   m_TagString: Enemy
@@ -3442,6 +3668,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &500667217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500667210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3549,6 +3789,7 @@ GameObject:
   - component: {fileID: 601280762}
   - component: {fileID: 601280761}
   - component: {fileID: 601280760}
+  - component: {fileID: 601280765}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (10)
   m_TagString: Enemy
@@ -3732,6 +3973,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &601280765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601280758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &656010269
 GameObject:
   m_ObjectHideFlags: 0
@@ -3746,6 +4001,7 @@ GameObject:
   - component: {fileID: 656010273}
   - component: {fileID: 656010272}
   - component: {fileID: 656010271}
+  - component: {fileID: 656010276}
   m_Layer: 0
   m_Name: Juca (4)
   m_TagString: Enemy
@@ -3929,6 +4185,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &656010276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656010269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &658000582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3943,6 +4213,7 @@ GameObject:
   - component: {fileID: 658000586}
   - component: {fileID: 658000585}
   - component: {fileID: 658000584}
+  - component: {fileID: 658000589}
   m_Layer: 0
   m_Name: Juca (2)
   m_TagString: Enemy
@@ -4126,6 +4397,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &658000589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658000582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &676291082
 GameObject:
   m_ObjectHideFlags: 0
@@ -4276,6 +4561,7 @@ GameObject:
   - component: {fileID: 698022613}
   - component: {fileID: 698022612}
   - component: {fileID: 698022611}
+  - component: {fileID: 698022616}
   m_Layer: 0
   m_Name: Android_Invader (15)
   m_TagString: Enemy
@@ -4459,6 +4745,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &698022616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698022609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &714698600
 GameObject:
   m_ObjectHideFlags: 0
@@ -4473,6 +4773,7 @@ GameObject:
   - component: {fileID: 714698604}
   - component: {fileID: 714698603}
   - component: {fileID: 714698602}
+  - component: {fileID: 714698607}
   m_Layer: 0
   m_Name: Android_Invader (11)
   m_TagString: Enemy
@@ -4656,6 +4957,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &714698607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 714698600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &733853707
 GameObject:
   m_ObjectHideFlags: 0
@@ -4670,6 +4985,7 @@ GameObject:
   - component: {fileID: 733853711}
   - component: {fileID: 733853710}
   - component: {fileID: 733853709}
+  - component: {fileID: 733853714}
   m_Layer: 0
   m_Name: Juca (6)
   m_TagString: Enemy
@@ -4853,6 +5169,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &733853714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733853707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &746123620
 GameObject:
   m_ObjectHideFlags: 0
@@ -4891,6 +5221,7 @@ MonoBehaviour:
   projectileSpeed: 10
   nextFireTime: 0
   scoreText: {fileID: 676291084}
+  hp: 3
 --- !u!61 &746123622
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5047,6 +5378,7 @@ GameObject:
   - component: {fileID: 749298654}
   - component: {fileID: 749298653}
   - component: {fileID: 749298652}
+  - component: {fileID: 749298657}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (9)
   m_TagString: Enemy
@@ -5230,6 +5562,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &749298657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749298650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &760112825
 GameObject:
   m_ObjectHideFlags: 0
@@ -5244,6 +5590,7 @@ GameObject:
   - component: {fileID: 760112829}
   - component: {fileID: 760112828}
   - component: {fileID: 760112827}
+  - component: {fileID: 760112832}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (12)
   m_TagString: Enemy
@@ -5427,6 +5774,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &760112832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760112825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &795127646
 GameObject:
   m_ObjectHideFlags: 0
@@ -5441,6 +5802,7 @@ GameObject:
   - component: {fileID: 795127652}
   - component: {fileID: 795127651}
   - component: {fileID: 795127650}
+  - component: {fileID: 795127653}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader
   m_TagString: Enemy
@@ -5624,6 +5986,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.02, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &795127653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795127646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &796788044
 GameObject:
   m_ObjectHideFlags: 0
@@ -5638,6 +6014,7 @@ GameObject:
   - component: {fileID: 796788048}
   - component: {fileID: 796788047}
   - component: {fileID: 796788046}
+  - component: {fileID: 796788051}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (12)
   m_TagString: Enemy
@@ -5821,6 +6198,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &796788051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 796788044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &806167968
 GameObject:
   m_ObjectHideFlags: 0
@@ -5921,6 +6312,7 @@ GameObject:
   - component: {fileID: 852580391}
   - component: {fileID: 852580390}
   - component: {fileID: 852580389}
+  - component: {fileID: 852580394}
   m_Layer: 0
   m_Name: Juca (10)
   m_TagString: Enemy
@@ -6104,6 +6496,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &852580394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852580387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &862819750
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,6 +6602,7 @@ GameObject:
   - component: {fileID: 927988621}
   - component: {fileID: 927988620}
   - component: {fileID: 927988619}
+  - component: {fileID: 927988624}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (10)
   m_TagString: Enemy
@@ -6379,6 +6786,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &927988624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927988617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &932326662
 GameObject:
   m_ObjectHideFlags: 0
@@ -6393,6 +6814,7 @@ GameObject:
   - component: {fileID: 932326666}
   - component: {fileID: 932326665}
   - component: {fileID: 932326664}
+  - component: {fileID: 932326669}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (9)
   m_TagString: Enemy
@@ -6576,6 +6998,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &932326669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932326662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &952880626
 GameObject:
   m_ObjectHideFlags: 0
@@ -6787,8 +7223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
-  fireRate: 1
-  projectileSpeed: 10
+  nextFireTime: 0
 --- !u!1 &966676418
 GameObject:
   m_ObjectHideFlags: 0
@@ -6803,6 +7238,7 @@ GameObject:
   - component: {fileID: 966676424}
   - component: {fileID: 966676423}
   - component: {fileID: 966676422}
+  - component: {fileID: 966676425}
   m_Layer: 0
   m_Name: Juca
   m_TagString: Enemy
@@ -6986,6 +7422,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.02, y: 0.8}
   m_EdgeRadius: 0
+--- !u!114 &966676425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966676418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1012340308
 GameObject:
   m_ObjectHideFlags: 0
@@ -7000,6 +7450,7 @@ GameObject:
   - component: {fileID: 1012340312}
   - component: {fileID: 1012340311}
   - component: {fileID: 1012340310}
+  - component: {fileID: 1012340315}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (1)
   m_TagString: Enemy
@@ -7183,6 +7634,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1012340315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012340308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1043491160
 GameObject:
   m_ObjectHideFlags: 0
@@ -7197,6 +7662,7 @@ GameObject:
   - component: {fileID: 1043491164}
   - component: {fileID: 1043491163}
   - component: {fileID: 1043491162}
+  - component: {fileID: 1043491167}
   m_Layer: 0
   m_Name: Android_Invader (4)
   m_TagString: Enemy
@@ -7380,6 +7846,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1043491167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043491160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1109409724
 GameObject:
   m_ObjectHideFlags: 0
@@ -7394,6 +7874,7 @@ GameObject:
   - component: {fileID: 1109409728}
   - component: {fileID: 1109409727}
   - component: {fileID: 1109409726}
+  - component: {fileID: 1109409731}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (15)
   m_TagString: Enemy
@@ -7577,6 +8058,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1109409731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109409724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1140797640
 GameObject:
   m_ObjectHideFlags: 0
@@ -7591,6 +8086,7 @@ GameObject:
   - component: {fileID: 1140797644}
   - component: {fileID: 1140797643}
   - component: {fileID: 1140797642}
+  - component: {fileID: 1140797647}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (4)
   m_TagString: Enemy
@@ -7774,6 +8270,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1140797647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140797640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1143908946
 GameObject:
   m_ObjectHideFlags: 0
@@ -7866,6 +8376,7 @@ GameObject:
   - component: {fileID: 1158542285}
   - component: {fileID: 1158542284}
   - component: {fileID: 1158542283}
+  - component: {fileID: 1158542288}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (11)
   m_TagString: Enemy
@@ -8049,6 +8560,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1158542288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158542281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1219957289
 GameObject:
   m_ObjectHideFlags: 0
@@ -8063,6 +8588,7 @@ GameObject:
   - component: {fileID: 1219957293}
   - component: {fileID: 1219957292}
   - component: {fileID: 1219957291}
+  - component: {fileID: 1219957296}
   m_Layer: 0
   m_Name: Juca (13)
   m_TagString: Enemy
@@ -8246,6 +8772,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1219957296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219957289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1285803933
 GameObject:
   m_ObjectHideFlags: 0
@@ -8260,6 +8800,7 @@ GameObject:
   - component: {fileID: 1285803937}
   - component: {fileID: 1285803936}
   - component: {fileID: 1285803935}
+  - component: {fileID: 1285803940}
   m_Layer: 0
   m_Name: Android_Invader (5)
   m_TagString: Enemy
@@ -8443,6 +8984,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 2
   m_SpriteSortPoint: 0
+--- !u!114 &1285803940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285803933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1350067820
 GameObject:
   m_ObjectHideFlags: 0
@@ -8457,6 +9012,7 @@ GameObject:
   - component: {fileID: 1350067824}
   - component: {fileID: 1350067823}
   - component: {fileID: 1350067822}
+  - component: {fileID: 1350067827}
   m_Layer: 0
   m_Name: Android_Invader (3)
   m_TagString: Enemy
@@ -8640,6 +9196,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1350067827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350067820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1363728432
 GameObject:
   m_ObjectHideFlags: 0
@@ -8654,6 +9224,7 @@ GameObject:
   - component: {fileID: 1363728436}
   - component: {fileID: 1363728435}
   - component: {fileID: 1363728434}
+  - component: {fileID: 1363728439}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (2)
   m_TagString: Enemy
@@ -8837,6 +9408,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1363728439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363728432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1412123470
 GameObject:
   m_ObjectHideFlags: 0
@@ -8851,6 +9436,7 @@ GameObject:
   - component: {fileID: 1412123474}
   - component: {fileID: 1412123473}
   - component: {fileID: 1412123472}
+  - component: {fileID: 1412123477}
   m_Layer: 0
   m_Name: Android_Invader (12)
   m_TagString: Enemy
@@ -9034,6 +9620,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1412123477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1412123470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1415707436
 GameObject:
   m_ObjectHideFlags: 0
@@ -9048,6 +9648,7 @@ GameObject:
   - component: {fileID: 1415707440}
   - component: {fileID: 1415707439}
   - component: {fileID: 1415707438}
+  - component: {fileID: 1415707443}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (5)
   m_TagString: Enemy
@@ -9231,6 +9832,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1415707443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1415707436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1421948740
 GameObject:
   m_ObjectHideFlags: 0
@@ -9245,6 +9860,7 @@ GameObject:
   - component: {fileID: 1421948744}
   - component: {fileID: 1421948743}
   - component: {fileID: 1421948742}
+  - component: {fileID: 1421948747}
   m_Layer: 0
   m_Name: Juca (7)
   m_TagString: Enemy
@@ -9428,6 +10044,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1421948747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421948740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1465639838
 GameObject:
   m_ObjectHideFlags: 0
@@ -9442,6 +10072,7 @@ GameObject:
   - component: {fileID: 1465639842}
   - component: {fileID: 1465639841}
   - component: {fileID: 1465639840}
+  - component: {fileID: 1465639845}
   m_Layer: 0
   m_Name: Android_Invader (10)
   m_TagString: Enemy
@@ -9625,6 +10256,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1465639845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465639838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1475284244
 GameObject:
   m_ObjectHideFlags: 0
@@ -9686,6 +10331,7 @@ GameObject:
   - component: {fileID: 1495712349}
   - component: {fileID: 1495712348}
   - component: {fileID: 1495712347}
+  - component: {fileID: 1495712352}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (11)
   m_TagString: Enemy
@@ -9869,6 +10515,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1495712352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495712345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1504599375
 GameObject:
   m_ObjectHideFlags: 0
@@ -9883,6 +10543,7 @@ GameObject:
   - component: {fileID: 1504599379}
   - component: {fileID: 1504599378}
   - component: {fileID: 1504599377}
+  - component: {fileID: 1504599382}
   m_Layer: 0
   m_Name: Android_Invader (2)
   m_TagString: Enemy
@@ -10066,6 +10727,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1504599382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504599375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1522544226
 GameObject:
   m_ObjectHideFlags: 0
@@ -10080,6 +10755,7 @@ GameObject:
   - component: {fileID: 1522544230}
   - component: {fileID: 1522544229}
   - component: {fileID: 1522544228}
+  - component: {fileID: 1522544233}
   m_Layer: 0
   m_Name: Juca (11)
   m_TagString: Enemy
@@ -10263,6 +10939,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1522544233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522544226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1599302331
 GameObject:
   m_ObjectHideFlags: 0
@@ -10277,6 +10967,7 @@ GameObject:
   - component: {fileID: 1599302335}
   - component: {fileID: 1599302334}
   - component: {fileID: 1599302333}
+  - component: {fileID: 1599302338}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (2)
   m_TagString: Enemy
@@ -10460,6 +11151,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1599302338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599302331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1635172347
 GameObject:
   m_ObjectHideFlags: 0
@@ -10521,6 +11226,7 @@ GameObject:
   - component: {fileID: 1687275551}
   - component: {fileID: 1687275550}
   - component: {fileID: 1687275549}
+  - component: {fileID: 1687275554}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (1)
   m_TagString: Enemy
@@ -10704,6 +11410,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1687275554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687275547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1691290714
 GameObject:
   m_ObjectHideFlags: 0
@@ -10765,6 +11485,7 @@ GameObject:
   - component: {fileID: 1752403432}
   - component: {fileID: 1752403431}
   - component: {fileID: 1752403430}
+  - component: {fileID: 1752403435}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (15)
   m_TagString: Enemy
@@ -10948,6 +11669,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1752403435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1752403428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1770839937
 GameObject:
   m_ObjectHideFlags: 0
@@ -10962,6 +11697,7 @@ GameObject:
   - component: {fileID: 1770839941}
   - component: {fileID: 1770839940}
   - component: {fileID: 1770839939}
+  - component: {fileID: 1770839944}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (13)
   m_TagString: Enemy
@@ -11145,6 +11881,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1770839944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1770839937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1801114753
 GameObject:
   m_ObjectHideFlags: 0
@@ -11159,6 +11909,7 @@ GameObject:
   - component: {fileID: 1801114757}
   - component: {fileID: 1801114756}
   - component: {fileID: 1801114755}
+  - component: {fileID: 1801114760}
   m_Layer: 0
   m_Name: Juca (3)
   m_TagString: Enemy
@@ -11342,6 +12093,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1801114760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801114753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1807125079
 GameObject:
   m_ObjectHideFlags: 0
@@ -11424,6 +12189,7 @@ GameObject:
   - component: {fileID: 1818852803}
   - component: {fileID: 1818852802}
   - component: {fileID: 1818852801}
+  - component: {fileID: 1818852806}
   m_Layer: 0
   m_Name: Juca (17)
   m_TagString: Enemy
@@ -11607,6 +12373,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1818852806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1818852799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1821557512
 GameObject:
   m_ObjectHideFlags: 0
@@ -11621,6 +12401,7 @@ GameObject:
   - component: {fileID: 1821557516}
   - component: {fileID: 1821557515}
   - component: {fileID: 1821557514}
+  - component: {fileID: 1821557519}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (14)
   m_TagString: Enemy
@@ -11804,6 +12585,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1821557519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821557512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1863589617
 GameObject:
   m_ObjectHideFlags: 0
@@ -11818,6 +12613,7 @@ GameObject:
   - component: {fileID: 1863589621}
   - component: {fileID: 1863589620}
   - component: {fileID: 1863589619}
+  - component: {fileID: 1863589624}
   m_Layer: 0
   m_Name: Juca (14)
   m_TagString: Enemy
@@ -12001,6 +12797,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1863589624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863589617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1875092509
 GameObject:
   m_ObjectHideFlags: 0
@@ -12015,6 +12825,7 @@ GameObject:
   - component: {fileID: 1875092513}
   - component: {fileID: 1875092512}
   - component: {fileID: 1875092511}
+  - component: {fileID: 1875092516}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (5)
   m_TagString: Enemy
@@ -12198,6 +13009,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1875092516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875092509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1913430872
 GameObject:
   m_ObjectHideFlags: 0
@@ -12212,6 +13037,7 @@ GameObject:
   - component: {fileID: 1913430876}
   - component: {fileID: 1913430875}
   - component: {fileID: 1913430874}
+  - component: {fileID: 1913430879}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (8)
   m_TagString: Enemy
@@ -12395,6 +13221,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1913430879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913430872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &1962952572
 GameObject:
   m_ObjectHideFlags: 0
@@ -12409,6 +13249,7 @@ GameObject:
   - component: {fileID: 1962952576}
   - component: {fileID: 1962952575}
   - component: {fileID: 1962952574}
+  - component: {fileID: 1962952579}
   m_Layer: 0
   m_Name: Android_Invader (8)
   m_TagString: Enemy
@@ -12592,6 +13433,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1962952579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962952572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &2026036446
 GameObject:
   m_ObjectHideFlags: 0
@@ -12606,6 +13461,7 @@ GameObject:
   - component: {fileID: 2026036450}
   - component: {fileID: 2026036449}
   - component: {fileID: 2026036448}
+  - component: {fileID: 2026036453}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (4)
   m_TagString: Enemy
@@ -12789,6 +13645,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2026036453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026036446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &2031063681
 GameObject:
   m_ObjectHideFlags: 0
@@ -12803,6 +13673,7 @@ GameObject:
   - component: {fileID: 2031063685}
   - component: {fileID: 2031063684}
   - component: {fileID: 2031063683}
+  - component: {fileID: 2031063688}
   m_Layer: 0
   m_Name: Bixo_Finu_Invader (3)
   m_TagString: Enemy
@@ -12986,6 +13857,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2031063688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031063681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &2065108233
 GameObject:
   m_ObjectHideFlags: 0
@@ -13000,6 +13885,7 @@ GameObject:
   - component: {fileID: 2065108237}
   - component: {fileID: 2065108236}
   - component: {fileID: 2065108235}
+  - component: {fileID: 2065108240}
   m_Layer: 0
   m_Name: Android_Invader (1)
   m_TagString: Enemy
@@ -13183,6 +14069,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2065108240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065108233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &2080309878
 GameObject:
   m_ObjectHideFlags: 0
@@ -13197,6 +14097,7 @@ GameObject:
   - component: {fileID: 2080309882}
   - component: {fileID: 2080309881}
   - component: {fileID: 2080309880}
+  - component: {fileID: 2080309885}
   m_Layer: 0
   m_Name: Android_Invader (9)
   m_TagString: Enemy
@@ -13380,6 +14281,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2080309885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080309878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &2101910535
 GameObject:
   m_ObjectHideFlags: 0
@@ -13394,6 +14309,7 @@ GameObject:
   - component: {fileID: 2101910539}
   - component: {fileID: 2101910538}
   - component: {fileID: 2101910537}
+  - component: {fileID: 2101910542}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (6)
   m_TagString: Enemy
@@ -13577,6 +14493,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2101910542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101910535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1 &2118714229
 GameObject:
   m_ObjectHideFlags: 0
@@ -13755,6 +14685,7 @@ GameObject:
   - component: {fileID: 2143882194}
   - component: {fileID: 2143882193}
   - component: {fileID: 2143882192}
+  - component: {fileID: 2143882197}
   m_Layer: 0
   m_Name: Tampas_DiPanela_Invader (8)
   m_TagString: Enemy
@@ -13938,6 +14869,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2143882197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143882190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e03b18bbbe3944a5f94c65c38f058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 7275934310741364583, guid: 8e13a4d937ce0374d99f096be60a966d, type: 3}
+  nextFireTime: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

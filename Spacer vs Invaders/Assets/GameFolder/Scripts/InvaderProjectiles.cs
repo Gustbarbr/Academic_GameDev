@@ -5,20 +5,29 @@ using UnityEngine;
 public class InvaderProjectile : MonoBehaviour
 {
     public GameObject projectilePrefab; // Prefab do projétil
-    public float fireRate = 0f; // Taxa de disparo
-    public float projectileSpeed = 5f; // Velocidade do projétil
+    private float fireRate = 75f; // Taxa de disparo
+    private float projectileSpeed = 10f; // Velocidade do projétil
 
-    private float nextFireTime = 0f;
+    public float nextFireTime = 0f;
+    private float individualFire;
+
+    private void Start()
+    {
+        // Faz uma taxa de disparos diferente para cada objeto
+        individualFire = Random.Range(0f, fireRate);
+    }
 
     void Update()
     {
+        int randomNumber = Random.Range(0, 10);
         nextFireTime += Time.deltaTime;
 
         // Verifica se é hora de disparar
-        if (nextFireTime >= fireRate)
+        if (nextFireTime >= individualFire)
         {
             ShootProjectile();
-            nextFireTime = 0; // Reinicia o tempo de disparo
+            nextFireTime = 0f; // Reinicia o tempo de disparo
+            individualFire = Random.Range(0f, fireRate);
         }
     }
 
