@@ -15,4 +15,4 @@ Developed by **Gustavo Gomes Barbosa** and **Pedro Munhoz Rosin** for University
 
 **A PLACE BETWEEN**
 
-Developed by **Gustavo Gomes Barbosa**, **Alan Daiki Suga**, **Fernando Milani Venerando** and **Cauã Santos** for University FEI.
+Developed by **Gustavo Gomes Barbosa**, **Alan Daiki Suga**, **Fernando Milani Venerando** and **Cauan Vinicius Espinha de Sousa** for University FEI.
