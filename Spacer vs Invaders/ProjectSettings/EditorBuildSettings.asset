@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Cena1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Cena2.unity
-    guid: 54c4313648b64ff4db782113befac9d1
-  - enabled: 1
     path: Assets/Scenes/CenaMorte.unity
     guid: 364fc78215eb5e24291a0b7c25e5cfef
   - enabled: 1

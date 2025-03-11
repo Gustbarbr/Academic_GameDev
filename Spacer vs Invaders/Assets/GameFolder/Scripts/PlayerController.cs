@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
     public float fireRate = 0.5f; // Tempo de recarga
     public float projectileSpeed = 10f; // Velocidade do projétil
     public float nextFireTime = 0f;
-
     public TextMeshProUGUI scoreText;
     public float hp = 3;
 
@@ -28,6 +27,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+
         // Player movement
         var vel = rigidbody.velocity;
         if (Input.GetKey(KeyCode.LeftArrow))

@@ -38,7 +38,8 @@ public class ProjectileBehaviour : MonoBehaviour
             if(player.hp <= 0)
             {
                 //TESTE PARA TROCAR DE CENA AO MORRER
-                Destroy(collider.gameObject); // Destroi o inimigo
+                Destroy(collider.gameObject); // Destroi o player
+                Destroy(scoreManager.gameObject);
                 SceneManager.LoadScene("CenaMorte");
             }
         }

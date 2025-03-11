@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class InvaderProjectile : MonoBehaviour
 {
-    public GameObject projectilePrefab; // Prefab do projétil
+    public GameObject projectilePrefab; // Prefab do projï¿½til
     private float fireRate = 75f; // Taxa de disparo
-    private float projectileSpeed = 10f; // Velocidade do projétil
+    private float projectileSpeed = 10f; // Velocidade do projï¿½til
 
     public float nextFireTime = 0f;
     private float individualFire;
@@ -19,10 +19,9 @@ public class InvaderProjectile : MonoBehaviour
 
     void Update()
     {
-        int randomNumber = Random.Range(0, 10);
         nextFireTime += Time.deltaTime;
 
-        // Verifica se é hora de disparar
+        // Verifica se ï¿½ hora de disparar
         if (nextFireTime >= individualFire)
         {
             ShootProjectile();
@@ -33,13 +32,13 @@ public class InvaderProjectile : MonoBehaviour
 
     void ShootProjectile()
     {
-        // Cria uma instância do projétil na posição do invasor
+        // Cria uma instï¿½ncia do projï¿½til na posiï¿½ï¿½o do invasor
         GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
 
-        // Adiciona uma força ao projétil para movê-lo para baixo
+        // Adiciona uma forï¿½a ao projï¿½til para movï¿½-lo para baixo
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         
-        // Define a velocidade do projétil para baixo
+        // Define a velocidade do projï¿½til para baixo
         rb.velocity = Vector2.down * projectileSpeed; // Move para baixo
     }
 }

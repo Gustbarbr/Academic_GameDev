@@ -10,6 +10,7 @@ public class ScoreManager : MonoBehaviour
     int score = 0;
 
     void Start(){
+        score = 0;
         DontDestroyOnLoad(gameObject);
         scoreText.text = "SPACERS POINTOS: " + score.ToString();
     }
