@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class NextSceneScript : MonoBehaviour
 {
 
-    // Update is called once per frame
+    PlayerController player;
+    void Start(){
+        player = FindObjectOfType<PlayerController>();
+    }
     void Update()
     {
         Scene scene = SceneManager.GetActiveScene();
         var enemies = GameObject.FindWithTag("Enemy");
         if(enemies == null && scene.name == "Cena1"){ 
+            Destroy(player.gameObject);
             SceneManager.LoadScene("CenaGanhar");
         }
     }

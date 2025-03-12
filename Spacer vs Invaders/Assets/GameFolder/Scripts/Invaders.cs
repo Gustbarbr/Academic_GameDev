@@ -63,6 +63,6 @@ public class Invaders : MonoBehaviour
     void Descer()
     {
         transform.position = new Vector2(transform.position.x, transform.position.y - descentSpeed);
-        descentTime -= 1.5f;
+        descentTime -= 1f;
     }
 }

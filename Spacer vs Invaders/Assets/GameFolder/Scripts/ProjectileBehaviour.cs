@@ -31,6 +31,13 @@ public class ProjectileBehaviour : MonoBehaviour
             scoreManager.ScorePointos();
         }
 
+        else if (isPlayerProjectile && collider.CompareTag("Mothershipsons"))
+        {
+            Destroy(collider.gameObject); // Destroi o inimigo
+            Destroy(gameObject); // Destroi a bala ao colidir com o inimigo
+            scoreManager.MothershipScore();
+        }
+
         else if(!isPlayerProjectile && collider.CompareTag("Player")){
             Destroy(gameObject); // Destroi a bala ao colidir com o inimigo
             player.hp -= 1;

@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class CenaGanharScript : MonoBehaviour
 {
+
+    ScoreManager scoreManager;
     // Start is called before the first frame update
     void Start()
     {
-        
+        scoreManager = FindObjectOfType<ScoreManager>();
+        Destroy(scoreManager.gameObject);
     }
 
     // Update is called once per frame

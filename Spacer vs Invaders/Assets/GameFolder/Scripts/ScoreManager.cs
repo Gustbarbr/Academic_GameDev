@@ -19,4 +19,9 @@ public class ScoreManager : MonoBehaviour
         score+=10;
         scoreText.text = "SPACERS POINTOS: " + score.ToString();
     }
+
+    public void MothershipScore(){
+        score = Random.Range(100, 500);
+        scoreText.text = "SPACERS POINTOS: " + score.ToString();
+    }
 }
