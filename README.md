@@ -1,4 +1,4 @@
-# GameDev
+# Academic Game Development
 Portfolio for game development.
 
 **AIR HOCKEY**
