@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      meteoro1_1_0: -4860436857985485408
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

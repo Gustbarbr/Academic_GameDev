@@ -5259,7 +5259,7 @@ GameObject:
   - component: {fileID: 940369746}
   m_Layer: 0
   m_Name: Spacerson Shiperson
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5277,6 +5277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  laser: {fileID: 4000820106525289642, guid: ca5365522a931ca4ca0842487d0041f9, type: 3}
 --- !u!70 &940369747
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
