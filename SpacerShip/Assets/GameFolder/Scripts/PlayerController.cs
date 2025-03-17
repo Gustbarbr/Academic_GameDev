@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidbody;
 
     public GameObject laser;
+    public int hp = 3;
     private float nextFireTime = 0f;
 
     void Start()
