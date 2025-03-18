@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Morte.unity
     guid: 279f9fbc51979344fb107f720d681c22
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 3d11bdda12fd40d46b86d98a21917919
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
