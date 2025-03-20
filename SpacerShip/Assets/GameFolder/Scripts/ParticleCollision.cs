@@ -42,7 +42,7 @@ public class ParticleCollision : MonoBehaviour
     public void SlowDownParticles(){
         var main = particleSystem.main;  // Obtém a configuração principal do sistema de partículas
         main.startSpeed = main.startSpeed.constant * 0.5f;  // Diminui a velocidade das partículas pela metade
-        StartCoroutine(ResetSpeedAfterTime(main, 5f));  // Passa o 'main' para a coroutine
+        StartCoroutine(ResetSpeedAfterTime(main, 5f));
     }
 
     private IEnumerator ResetSpeedAfterTime(ParticleSystem.MainModule main, float time)
