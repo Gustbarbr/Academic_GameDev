@@ -25,7 +25,7 @@ public class ScoreManager : MonoBehaviour
             SceneManager.LoadScene("Victory");
         }
         
-        // Quando a pontuação atingir 500, reduzimos a velocidade do parallax por 5 segundos
+        // Quando a pontuação atingir 500, 1250 e 2000 a velocidade do parallax é reduzida por 5 segundos
         if(score == 500 || score == 1250 || score == 2000){
             foreach (var parallax in parallaxObjects)
             {

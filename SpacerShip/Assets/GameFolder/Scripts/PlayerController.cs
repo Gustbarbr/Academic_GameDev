@@ -89,7 +89,7 @@ public class PlayerController : MonoBehaviour
         // Obtém o Rigidbody2D do laser e aplica uma força para movê-lo
         Rigidbody2D rb = laserProjectile.GetComponent<Rigidbody2D>();
 
-        // Adiciona uma velocidade para o laser (exemplo: movendo-o para frente)
-        rb.velocity = new Vector2(10f, 0f);  // Ajuste a velocidade conforme necessário
+        // Adiciona uma velocidade para o laser
+        rb.velocity = new Vector2(10f, 0f);
     }
 }
