@@ -9,6 +9,9 @@ public class PlayerControl : MonoBehaviour
 
     public float moveSpeed;
     public float jumpForce;
+    float buttonPressingTime = 0.3f;
+    float jumpTime;
+    bool jump;
 
     void Start(){
         rb = GetComponent<Rigidbody2D>();
@@ -44,7 +47,21 @@ public class PlayerControl : MonoBehaviour
 
     void playerJump(){
         if(Input.GetKeyDown(KeyCode.Space)){
-            rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            jump = true;
+            jumpTime = 0;
+        }
+
+        if (jump)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            jumpTime += Time.deltaTime;
+            animator.SetBool("Jump", true);
+        }
+
+        if (Input.GetKeyUp(KeyCode.Space) || jumpTime > buttonPressingTime)
+        {
+            jump = false;
+            animator.SetBool("Jump", false);
         }
     }
 }
