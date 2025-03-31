@@ -31,4 +31,13 @@ public class EnemyControl : MonoBehaviour
             movingToB = !movingToB; // Alterna entre ir para A ou B
         }
     }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if(collider.CompareTag("Player"))
+        {
+            Debug.Log("Player toma dano");
+        }
+    }
+
 }

@@ -12,6 +12,7 @@ public class PlayerControl : MonoBehaviour
     float buttonPressingTime = 0.3f;
     float jumpTime;
     bool jump;
+    bool isGrounded;
 
     void Start(){
         rb = GetComponent<Rigidbody2D>();
@@ -46,7 +47,7 @@ public class PlayerControl : MonoBehaviour
     }
 
     void playerJump(){
-        if(Input.GetKeyDown(KeyCode.Space)){
+        if(Input.GetKeyDown(KeyCode.Space) && isGrounded){
             jump = true;
             jumpTime = 0;
         }
@@ -62,6 +63,25 @@ public class PlayerControl : MonoBehaviour
         {
             jump = false;
             animator.SetBool("Jump", false);
+        }
+    }
+
+    // Detecta se o jogador tocou o solo
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Verifique se o jogador tocou o solo (pode ser necessário ajustar a tag)
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+
+    // Detecta quando o jogador deixa o solo
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
         }
     }
 }
