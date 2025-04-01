@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b535d913f33405e47b9c32e599e868f5
+guid: f9481ba2c4028d14d926fbf3b3d12fde
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6308550269551417746
-    second: menuMorte_0
+      213: -7545235797393067700
+    second: cenaProximaFase_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menuMorte_0
+      name: cenaProximaFase_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2999e48cb097c8750800000000000000
-      internalID: 6308550269551417746
+      spriteID: c4133d5c400f94790800000000000000
+      internalID: -7545235797393067700
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      menuMorte_0: 6308550269551417746
+      cenaProximaFase_0: -7545235797393067700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

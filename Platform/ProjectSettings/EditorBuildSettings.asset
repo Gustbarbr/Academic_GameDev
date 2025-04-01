@@ -8,4 +8,20 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/CenaMorte.unity
+    guid: f5cb08dc025bb7d44942bd476b469d88
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: a04d71bdeafe3474e84fa9cb36990a87
+  - enabled: 1
+    path: Assets/Scenes/CenaProximaFase.unity
+    guid: 3b186bcab9febf34da8b0ed7392e1058
+  - enabled: 1
+    path: Assets/Scenes/SampleScene2.unity
+    guid: d8b487051e6234d4991ba9e0a31dabb5
+  - enabled: 1
+    path: Assets/Scenes/CenaGanhar.unity
+    guid: 6360654eae469fe46bbf78e382415c47
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

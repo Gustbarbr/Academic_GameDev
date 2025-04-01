@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyControl : MonoBehaviour
 {
@@ -8,18 +9,19 @@ public class EnemyControl : MonoBehaviour
     public float speed;
     public GameObject goTo_A;
     public GameObject goTo_B;
+    private int lifePlayer = 0;
 
     private bool movingToB = true; // Para controlar para qual ponto o inimigo vai
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        transform.position = goTo_A.transform.position; // Começa na posição de goTo_A
+        transform.position = goTo_A.transform.position; // Comeï¿½a na posiï¿½ï¿½o de goTo_A
     }
 
     void Update()
     {
-        // Verifica qual ponto o inimigo está indo
+        // Verifica qual ponto o inimigo estï¿½ indo
         GameObject target = movingToB ? goTo_B : goTo_A;
 
         // Move o inimigo para o alvo
@@ -37,6 +39,10 @@ public class EnemyControl : MonoBehaviour
         if(collider.CompareTag("Player"))
         {
             Debug.Log("Player toma dano");
+            lifePlayer++;
+            if(lifePlayer >= 3){
+                SceneManager.LoadScene("CenaMorte");
+            }
         }
     }
 

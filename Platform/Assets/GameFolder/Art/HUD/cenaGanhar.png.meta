@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b535d913f33405e47b9c32e599e868f5
+guid: 68252902e1ec2a94ca26ec42d50664e5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6308550269551417746
-    second: menuMorte_0
+      213: 8369469401144828462
+    second: cenaGanhar_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: menuMorte_0
+      name: cenaGanhar_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2999e48cb097c8750800000000000000
-      internalID: 6308550269551417746
+      spriteID: e222db5b314562470800000000000000
+      internalID: 8369469401144828462
       vertices: []
       indices: 
       edges: []
@@ -170,7 +170,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      menuMorte_0: 6308550269551417746
+      cenaGanhar_0: 8369469401144828462
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
