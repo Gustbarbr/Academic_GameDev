@@ -38,7 +38,6 @@ public class EnemyControl : MonoBehaviour
     {
         if(collider.CompareTag("Player"))
         {
-            Debug.Log("Player toma dano");
             lifePlayer++;
             if(lifePlayer >= 3){
                 SceneManager.LoadScene("CenaMorte");
