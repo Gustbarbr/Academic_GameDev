@@ -10,10 +10,13 @@ public class DialogBoxScript : MonoBehaviour
     public float textSpeed;
     private int index;
 
+    PlayerControl player;
+
     // Start is called before the first frame update
 
     void Start()
     {
+        player = FindObjectOfType<PlayerControl>();
         textComponent.text = string.Empty;
         StartDialog();
     }
@@ -34,6 +37,7 @@ public class DialogBoxScript : MonoBehaviour
 
     void StartDialog(){
         index = 0;
+        player.GetComponent<PlayerControl>().enabled = false;
         StartCoroutine(TypeLine());
     }
 
@@ -50,6 +54,7 @@ public class DialogBoxScript : MonoBehaviour
             StartCoroutine(TypeLine());
         }else{
             gameObject.SetActive(false);
+            player.GetComponent<PlayerControl>().enabled = true;
         }
     }
 
