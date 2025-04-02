@@ -12,7 +12,6 @@ public class ScoreManager : MonoBehaviour
     void Start()
     {
         score = 0;
-        DontDestroyOnLoad(gameObject);
         scoreText.text = "GOTICULUS COLETADOS: " + score.ToString();
     }
 

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EnemyControl : MonoBehaviour
 {
@@ -9,13 +10,14 @@ public class EnemyControl : MonoBehaviour
     public float speed;
     public GameObject goTo_A;
     public GameObject goTo_B;
-    private int lifePlayer = 0;
+    PlayerControl player;
 
     private bool movingToB = true; // Para controlar para qual ponto o inimigo vai
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        player = FindObjectOfType<PlayerControl>();
         transform.position = goTo_A.transform.position; // Come�a na posi��o de goTo_A
     }
 
@@ -38,8 +40,8 @@ public class EnemyControl : MonoBehaviour
     {
         if(collider.CompareTag("Player"))
         {
-            lifePlayer++;
-            if(lifePlayer >= 3){
+            player.hpSlider.value -= 0.334f;
+            if(player.hpSlider.value <= 0){
                 SceneManager.LoadScene("CenaMorte");
             }
         }

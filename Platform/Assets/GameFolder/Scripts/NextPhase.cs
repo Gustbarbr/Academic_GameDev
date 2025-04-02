@@ -15,7 +15,7 @@ public class NextPhase : MonoBehaviour
     void Update()
     {
         if(Input.GetKey(KeyCode.Space)){
-            SceneManager.LoadScene("SampleScene2");
+            SceneManager.LoadScene("CenaFinal");
         }
     }
 }

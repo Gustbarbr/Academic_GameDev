@@ -15,7 +15,7 @@ public class MenuScript : MonoBehaviour
     void Update()
     {
         if(Input.GetKey(KeyCode.Space)){
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("CenaInicial");
         }
     }
 }

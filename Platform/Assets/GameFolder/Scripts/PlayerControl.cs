@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class PlayerControl : MonoBehaviour
     bool jump;
     bool isGrounded;
 
+    public Slider hpSlider;
     void Start(){
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();

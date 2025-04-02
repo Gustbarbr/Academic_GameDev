@@ -13,11 +13,11 @@ public class ContadorGoticulus : MonoBehaviour
 
     void Update()
     {
-        if (transform.childCount == 0 && cenaAtual == "SampleScene")
+        if (transform.childCount == 0 && cenaAtual == "CenaInicial")
         {
             SceneManager.LoadScene("CenaProximaFase");
         }
-        else if (transform.childCount == 0 && cenaAtual == "SampleScene2")
+        else if (transform.childCount == 0 && cenaAtual == "CenaFinal")
         {
             SceneManager.LoadScene("CenaGanhar");
         }
